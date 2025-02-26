@@ -1,12 +1,13 @@
 #include <iostream>
 #include <thread>
+using namespace std;
 
 void hello() {
-    std::cout << "Hello World\n";
+    cout << "Hello World\n";
 }
 
 int main() {
-    std::thread t(hello);
+    thread t(hello);
     t.join();
     return 0;
 }
